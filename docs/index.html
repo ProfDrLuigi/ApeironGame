@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a0c11">
+  <meta name="description" content="Apeiron X: a native macOS port of the arcade classic featuring HD graphics, SpriteKit, controller support, and local high scores.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Apeiron X · Classic Arcade, Reborn on macOS">
+  <meta property="og:description" content="Classic arcade action, rebuilt for macOS. Explore Apeiron X and follow news about upcoming macOS releases.">
+  <meta property="og:locale" content="en_US">
+  <title>Apeiron X · Classic Arcade, Reborn on macOS</title>
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/css/site.css" rel="stylesheet">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <nav class="navbar navbar-expand-lg site-nav fixed-top" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand d-inline-flex align-items-center gap-2" href="#start" aria-label="Apeiron X: Home">
+        <img src="assets/img/favicon.png" alt="" width="38" height="38">
+        <span>APEIRON<span class="brand-x"> X</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Open navigation menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navigation">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="#spiel">The Game</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#steuerung">Controls</a></li>
+          <li class="nav-item"><a class="nav-link" href="#starten">Availability</a></li>
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-nav" href="https://github.com/ProfDrLuigi/ApeironGame" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-github" aria-hidden="true"></i> GitHub <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <section id="start" class="hero-section position-relative overflow-hidden">
+      <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
+      <div class="container position-relative">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-6">
+            <div class="eyebrow"><span class="live-dot"></span> NATIVE MACOS PORT <span class="eyebrow-divider">//</span> ARCADE REBORN</div>
+            <img class="hero-logo img-fluid" src="assets/img/apeiron-logo.jpg" width="1260" height="430" alt="Apeiron X logo in golden arcade lettering" fetchpriority="high">
+            <h1>An arcade classic.<br><span class="text-gradient">One more life.</span></h1>
+            <p class="hero-lead">Fast-paced arcade action, familiar foes, and another shot at a high score. Apeiron X brings the classic back to the Mac as a native SpriteKit game.</p>
+            <div class="d-flex flex-wrap align-items-center gap-3 hero-actions">
+              <a class="btn btn-arcade btn-lg" href="#spiel">Explore the Game <i class="bi bi-arrow-down-right ms-1" aria-hidden="true"></i></a>
+              <a class="btn btn-ghost btn-lg" href="https://github.com/ProfDrLuigi/ApeironGame" target="_blank" rel="noopener noreferrer"><i class="bi bi-github me-2" aria-hidden="true"></i>Project Updates</a>
+            </div>
+            <div class="hero-meta d-flex flex-wrap gap-3">
+              <span><i class="bi bi-apple" aria-hidden="true"></i> macOS 11+</span>
+              <span><i class="bi bi-controller" aria-hidden="true"></i> Game Controllers</span>
+              <span><i class="bi bi-stars" aria-hidden="true"></i> HD Sprites</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <figure class="game-display">
+              <div class="game-display-glow" aria-hidden="true"></div>
+              <div class="gameplay-frame">
+                <img class="gameplay-screenshot" src="assets/img/gameplay.jpg"
+                     width="1824" height="1488"
+                     alt="Actual Apeiron X gameplay on macOS, showing the grassy arcade playfield with enemies, score, bonus, lives, and wave indicators"
+                     fetchpriority="high" decoding="async">
+              </div>
+              <figcaption class="scene-caption d-flex justify-content-between align-items-center gap-2">
+                <span><span class="caption-indicator"></span> ACTUAL GAMEPLAY</span>
+                <span>Screenshot from the macOS game</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="hero-scroll"><span>SCROLL TO EXPLORE</span><span class="scroll-line"></span></div>
+      </div>
+    </section>
+
+    <section id="spiel" class="section-pad section-world">
+      <div class="container">
+        <div class="row align-items-end mb-5 gy-3">
+          <div class="col-lg-7">
+            <div class="section-eyebrow"><span>01</span> / THE GAME</div>
+            <h2 class="section-title">One battlefield.<br><span class="text-gradient">Endless second chances.</span></h2>
+          </div>
+          <div class="col-lg-5">
+            <p class="section-intro mb-0">Move your ship, keep the enemies at bay, and fight through wave after wave. The original gameplay stays true to its roots, now with a fresh visual polish.</p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <article class="creature-card creature-card-green h-100">
+              <div class="creature-art"><img src="assets/img/centipede.png" alt="Pede enemy from Apeiron" width="176" height="149"></div>
+              <div class="creature-info"><span class="card-index">ENEMY / 001</span><h3>Pede</h3><p>The familiar menace of the arena. A challenge that grows with every wave.</p></div>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="creature-card creature-card-violet h-100">
+              <div class="creature-art"><img src="assets/img/gecko.png" alt="Gecko enemy from Apeiron" width="260" height="125"></div>
+              <div class="creature-info"><span class="card-index">ENEMY / 002</span><h3>Gecko</h3><p>More enemies make the chaos unpredictable. Quick reactions beat blind luck.</p></div>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="creature-card creature-card-gold h-100">
+              <div class="creature-art"><img src="assets/img/shield.png" alt="Animated Sprinkles shield from Apeiron" width="144" height="155"></div>
+              <div class="creature-info"><span class="card-index">POWER-UP / 003</span><h3>Sprinkles</h3><p>Power-ups and shields give your next high-score run a fighting chance.</p></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section-pad features-section">
+      <div class="container">
+        <div class="section-eyebrow"><span>02</span> / BUILT TO PLAY</div>
+        <div class="row gy-3 align-items-end mb-5">
+          <div class="col-lg-8"><h2 class="section-title">Retro at heart.<br><span class="text-gradient">Native by design.</span></h2></div>
+          <div class="col-lg-4"><p class="section-intro mb-0">Not a browser game. Not an emulator. A native macOS port built with SpriteKit and AppKit.</p></div>
+        </div>
+        <div class="row g-3 g-lg-4">
+          <div class="col-md-6 col-lg-3">
+            <article class="feature-card h-100">
+              <div class="feature-icon"><i class="bi bi-display" aria-hidden="true"></i></div>
+              <h3>Built for macOS</h3>
+              <p>Native windows, SpriteKit rendering, and support for macOS 11 or later.</p>
+              <span class="feature-foot">01 / NATIVE</span>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <article class="feature-card h-100">
+              <div class="feature-icon"><i class="bi bi-controller" aria-hidden="true"></i></div>
+              <h3>Your Controls</h3>
+              <p>Mouse, keyboard, and compatible PlayStation, Xbox, or other controllers.</p>
+              <span class="feature-foot">02 / INPUT</span>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <article class="feature-card h-100">
+              <div class="feature-icon"><i class="bi bi-gem" aria-hidden="true"></i></div>
+              <h3>HD Artwork</h3>
+              <p>Remastered sprites without changing the classic collision rules.</p>
+              <span class="feature-foot">03 / VISUALS</span>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <article class="feature-card h-100">
+              <div class="feature-icon"><i class="bi bi-trophy" aria-hidden="true"></i></div>
+              <h3>High Scores</h3>
+              <p>Local leaderboards and that familiar urge to give it one more try.</p>
+              <span class="feature-foot">04 / REPLAY</span>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="steuerung" class="section-pad controls-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="section-eyebrow"><span>03</span> / CONTROLS</div>
+            <h2 class="section-title">Your game.<br><span class="text-gradient">Your way to play.</span></h2>
+            <p class="section-intro">Go old school with mouse and keyboard, or pick up a controller. Customize button mappings for PlayStation, Xbox, and other compatible gamepads in the game settings.</p>
+            <div class="control-list">
+              <div class="control-row"><span class="control-symbol"><i class="bi bi-mouse2" aria-hidden="true"></i></span><div><strong>Mouse &amp; Keyboard</strong><span>The familiar desktop controls are still here.</span></div></div>
+              <div class="control-row"><span class="control-symbol"><i class="bi bi-controller" aria-hidden="true"></i></span><div><strong>Game Controllers</strong><span>Custom button mapping and vibration feedback where supported.</span></div></div>
+              <div class="control-row"><span class="control-symbol"><i class="bi bi-sliders" aria-hidden="true"></i></span><div><strong>Make It Yours</strong><span>Controller profiles and more options inside the game.</span></div></div>
+            </div>
+            <a class="link-arrow mt-4 d-inline-flex align-items-center gap-2" href="https://github.com/ProfDrLuigi/ApeironGame/blob/HEAD/Apeiron/CONTROLLER_SUPPORT.md" target="_blank" rel="noopener noreferrer">Controller Guide <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+          </div>
+          <div class="col-lg-6">
+            <div class="control-showcase">
+              <span class="showcase-corner top-left" aria-hidden="true"></span><span class="showcase-corner bottom-right" aria-hidden="true"></span>
+              <div class="control-showcase-glow"></div>
+              <img class="showcase-appicon" src="assets/img/app-icon.png" alt="Apeiron app icon featuring a green caterpillar on a blue mushroom" width="256" height="256">
+              <div class="showcase-pill pill-one"><i class="bi bi-apple" aria-hidden="true"></i> macOS</div>
+              <div class="showcase-pill pill-two"><i class="bi bi-controller" aria-hidden="true"></i> Gamepad ready</div>
+              <div class="showcase-description"><span>MADE FOR THE MAC</span><strong>Old school. New machine.</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="starten" class="section-pad getting-started-section">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-5">
+            <div class="section-eyebrow"><span>04</span> / AVAILABILITY</div>
+            <h2 class="section-title">Ready for<br><span class="text-gradient">another round?</span></h2>
+            <p class="section-intro">Apeiron X brings classic arcade action to macOS. Follow the project and check for published game releases.</p>
+            <a class="btn btn-arcade btn-lg mt-3" href="https://github.com/ProfDrLuigi/ApeironGame/releases" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-down me-2" aria-hidden="true"></i> Check Releases <i class="bi bi-arrow-up-right ms-1" aria-hidden="true"></i></a>
+            <p class="download-note"><i class="bi bi-info-circle" aria-hidden="true"></i> Downloads are available only if a release has been published. A signed and notarized macOS release is not yet confirmed.</p>
+          </div>
+          <div class="col-lg-7">
+            <div class="release-panel">
+              <div class="release-panel-top d-flex align-items-center justify-content-between">
+                <span><i class="bi bi-apple me-2" aria-hidden="true"></i> MADE FOR MAC</span>
+                <span>MACOS 11+</span>
+              </div>
+              <div class="release-panel-body">
+                <img src="assets/img/app-icon.png" alt="Apeiron X game icon with a green caterpillar resting on a blue mushroom" width="132" height="132" class="release-app-icon">
+                <div class="release-panel-info">
+                  <div class="release-kicker">THE ARCADE RETURNS</div>
+                  <h3>Apeiron X</h3>
+                  <p>Familiar gameplay. Remastered artwork. Native macOS experience.</p>
+                  <div class="release-meta">
+                    <span><i class="bi bi-controller" aria-hidden="true"></i> Controller support</span>
+                    <span><i class="bi bi-stars" aria-hidden="true"></i> HD graphics</span>
+                  </div>
+                </div>
+              </div>
+              <div class="release-panel-footer d-flex align-items-center justify-content-between flex-wrap gap-3">
+                <span><span class="live-dot"></span> RELEASE NEWS ON GITHUB</span>
+                <a href="https://github.com/ProfDrLuigi/ApeironGame/releases" target="_blank" rel="noopener noreferrer">View Releases <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="fragen" class="section-pad faq-section">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-4">
+            <div class="section-eyebrow"><span>05</span> / FAQ</div>
+            <h2 class="section-title">Questions?</h2>
+            <p class="section-intro">Here are a few answers before your next life begins.</p>
+          </div>
+          <div class="col-lg-8">
+            <div class="accordion accordion-flush arcade-accordion" id="faq-accordion">
+              <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-one" aria-expanded="true" aria-controls="faq-one">Which macOS version do I need?</button></h3><div id="faq-one" class="accordion-collapse collapse show" data-bs-parent="#faq-accordion"><div class="accordion-body">Apeiron X targets macOS 11.0 or later.</div></div></div>
+              <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-two" aria-expanded="false" aria-controls="faq-two">Does the game support controllers?</button></h3><div id="faq-two" class="accordion-collapse collapse" data-bs-parent="#faq-accordion"><div class="accordion-body">Yes. The native GameController integration supports PlayStation, Xbox, and other compatible gamepads. You can customize button mappings in the game settings.</div></div></div>
+              <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-three" aria-expanded="false" aria-controls="faq-three">Is there a ready-to-download app?</button></h3><div id="faq-three" class="accordion-collapse collapse" data-bs-parent="#faq-accordion"><div class="accordion-body">Visit the <a href="https://github.com/ProfDrLuigi/ApeironGame/releases" target="_blank" rel="noopener noreferrer">Releases page</a> to see whether a macOS version is available to download. A signed and notarized release is not guaranteed.</div></div></div>
+              <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-four" aria-expanded="false" aria-controls="faq-four">What about Intel Macs?</button></h3><div id="faq-four" class="accordion-collapse collapse" data-bs-parent="#faq-accordion"><div class="accordion-body">The project has been built as a Universal Binary for Apple Silicon and Intel. Launching and playing on actual Intel hardware has not yet been verified.</div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="outro-section" aria-label="Visit the repository">
+      <div class="container">
+        <div class="outro-inner text-center">
+          <span class="outro-star" aria-hidden="true">✳</span>
+          <div class="section-eyebrow justify-content-center"><span>GAME ON</span> / ONE MORE TRY</div>
+          <h2>One more life.<br><span class="text-gradient">One more high score.</span></h2>
+          <p>The arena is waiting. One more round?</p>
+          <a class="btn btn-arcade btn-lg" href="https://github.com/ProfDrLuigi/ApeironGame" target="_blank" rel="noopener noreferrer">Apeiron X on GitHub <i class="bi bi-arrow-up-right ms-2" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row gy-4 align-items-center">
+        <div class="col-md-4"><a href="#start" class="footer-brand"><img src="assets/img/favicon.png" alt="" width="33" height="33"> APEIRON <span>X</span></a></div>
+        <div class="col-md-4 text-md-center"><p class="mb-0 footer-copy">Native macOS Port · SpriteKit &amp; AppKit</p></div>
+        <div class="col-md-4 text-md-end"><a href="https://github.com/ProfDrLuigi/ApeironGame" target="_blank" rel="noopener noreferrer" class="footer-link"><i class="bi bi-github" aria-hidden="true"></i> GitHub</a><a href="#start" class="footer-link ms-3">Back to Top <i class="bi bi-arrow-up" aria-hidden="true"></i></a></div>
+      </div>
+      <div class="footer-legal mt-4 pt-3">Unofficial porting project. Apeiron and Ambrosia Software are names associated with their respective rights holders. Not an official Ambrosia Software website.</div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/js/site.js" defer></script>
+</body>
+</html>
