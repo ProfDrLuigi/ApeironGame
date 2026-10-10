@@ -1,6 +1,6 @@
 # ApeironGame
 
-Modern Port of the classic "Barrack" from Ambrosia Software Inc.
+Modern Port of the classic "Barrack" from Ambrosia Software Inc. with full Controller support.
 
 Minimum macOS: 11.0
 
