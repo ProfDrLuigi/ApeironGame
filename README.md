@@ -1,4 +1,4 @@
-# ApeironGame
+# Apeiron
 
 Modern Port of the classic "Apeiron" from Ambrosia Software Inc. with full Controller support.
 
